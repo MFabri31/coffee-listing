@@ -1,0 +1,19 @@
+.hero {
+  min-height: 42vh;
+  background-image: url("../../assets/images/bg-cafe-sm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-image: url("../../assets/images/bg-cafe.jpg");
+    background-position: center top;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url("../../assets/images/bg-cafe-lg.jpg");
+  }
+}
