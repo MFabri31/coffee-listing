@@ -55,11 +55,12 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.6em 1em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--color-steel);
+  color: var(--color-cream);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -69,6 +70,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:nth-child(2) {
+  margin-left: 1rem;
+  background-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {
@@ -82,4 +88,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container {
+  max-width: 978px;
+  margin-left: auto;
+  margin-right: auto;
 }
